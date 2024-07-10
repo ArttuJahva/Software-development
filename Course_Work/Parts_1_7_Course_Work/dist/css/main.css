@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -55,7 +55,9 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(/dist/img/profilePicture.jpg);
+      background: url(/dist/img/profile_picture_small.jpg);
+      background-size: cover;
+      background-position: center;
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -123,7 +125,9 @@
     .menu-branding .portrait {
       background: url(/dist/img/profilePicture.jpg);
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      background-size: cover;
+      background-position: center; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -194,7 +198,7 @@ header {
   color: #eece1a; }
 
 main {
-  padding: 4rem;
+  padding: 1.5rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
