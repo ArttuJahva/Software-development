@@ -1,0 +1,17 @@
+{
+  "name": "parts_1_7_course_work",
+  "version": "1.0.0",
+  "description": "Course work 1 adjustment",
+  "main": "index.js",
+  "homepage": "https://github.com/ArttuJahva/Software-development",
+  "scripts": {
+    "test": "echo 'npm test script is working!'",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "A K",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "node-sass": "^9.0.0"
+  }
+}
