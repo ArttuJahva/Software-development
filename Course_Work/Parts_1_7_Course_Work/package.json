@@ -6,7 +6,8 @@
   "homepage": "https://github.com/ArttuJahva/Software-development",
   "scripts": {
     "test": "echo 'npm test script is working!'",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "A K",
   "license": "MIT",
