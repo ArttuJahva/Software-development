@@ -86,4 +86,12 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .photo-boxes {
+    grid-template-columns: 1fr;
+
+    .photo-box {
+      max-width: 100%;
+    }
+  }
 }

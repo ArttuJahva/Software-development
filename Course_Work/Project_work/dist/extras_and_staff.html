@@ -36,13 +36,52 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Extras & Staff</h1>
-      <p>Details about additional services and staff introductions...</p>
+
+    <main id="contact">
+      <h1 class="lg-heading">
+        Extras
+        <span class="text-secondary">& Staff</span>
+      </h1>
+
+      <h2 class="sm-heading">
+        Details about additional services and staff introductions...
+      </h2>
+
+      <div class="photo-boxes">
+        <div class="photo-box" onclick="showInfo(1)">
+          <p class="photo-title">Smoke sauna</p>
+          <img src="img/savusauna.JPG" alt="Extra 1" />
+          <p>Click for extra information</p>
+        </div>
+        <div class="photo-box" onclick="showInfo(2)">
+          <p class="photo-title">Outdoor hot tub</p>
+          <img src="img/palju.JPG" alt="Extra 2" />
+          <p>Click for extra information</p>
+        </div>
+        <div class="photo-box" onclick="showInfo(3)">
+          <p class="photo-title">Boat motor</p>
+          <img src="img/peramoottori.JPG" alt="Extra 3" />
+          <p>Click for extra information</p>
+        </div>
+      </div>
+
+      <div class="boxes" style="padding: 50px">
+        <div>
+          <span class="text-secondary">Email: </span>
+          contact@email.com
+        </div>
+        <div><span class="text-secondary">Phone: </span> +358 505 505 050</div>
+        <div>
+          <span class="text-secondary">Address: </span> Köllölän kylä, Finland,
+          Juuka 83940
+        </div>
+      </div>
     </main>
+
     <footer>
       <p>&copy; 2024 Company Name</p>
     </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
