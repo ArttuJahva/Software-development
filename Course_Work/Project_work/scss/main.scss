@@ -1,0 +1,60 @@
+@import "config";
+@import "menu";
+@import "mobile";
+
+body {
+  font-family: Arial, sans-serif;
+  background: $secondary-color;
+  @include background;
+
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  main {
+    margin-top: 4em;
+    padding: 2rem;
+    .intro,
+    .cottages,
+    .cottage-details {
+      padding: 2em;
+      background: rgba($secondary-color, 0.8);
+      margin: 1em;
+    }
+    .cottages {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      .cottage {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .cottage-details {
+      .slideshow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        img {
+          width: 100%;
+          display: none;
+          &:first-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    text-align: center;
+    padding: 1em;
+  }
+}

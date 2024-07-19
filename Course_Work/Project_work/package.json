@@ -1,0 +1,17 @@
+{
+  "name": "project_work",
+  "version": "1.0.0",
+  "description": "Project work assignment for LUT course",
+  "main": "index.js",
+  "homepage": "https://github.com/ArttuJahva/Software-development",
+  "scripts": {
+    "test": "echo 'npm test script is working!'",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "A K",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
