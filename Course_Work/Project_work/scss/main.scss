@@ -52,6 +52,7 @@ header {
 main {
   padding: 1.4rem;
   min-height: calc(100vh - 60px);
+  // margin-top: -10vh; // Move everything up by 10vh
 
   .icons {
     margin-top: 1rem;
@@ -69,7 +70,7 @@ main {
   &#home {
     overflow: hidden;
     h1 {
-      margin-top: 20vh;
+      margin-top: 10vh;
     }
   }
 
@@ -108,10 +109,11 @@ main {
     }
   }
 
+  // Extras and staff photos formatting
   .photo-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1em;
+    gap: 2em;
     margin-top: 2rem;
     justify-items: center;
 
@@ -123,12 +125,14 @@ main {
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
       width: 100%;
-      max-width: 450px;
+      height: 100%;
+      max-width: 700px;
+      max-height: 700px;
       text-align: center;
 
       img {
-        width: 100%;
-        height: 250px;
+        width: 95%;
+        height: 75%;
         object-fit: cover;
       }
 
@@ -146,7 +150,7 @@ main {
     }
 
     .photo-title {
-      font-size: 2rem; // Increased font size for photo titles
+      font-size: 2rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
@@ -325,6 +329,7 @@ form {
   }
 }
 
+// Kollola 1-3 page picture displays
 .image-display {
   width: 100%;
   max-width: 600px;
@@ -340,6 +345,7 @@ form {
   }
 }
 
+// Kollola 1-3 page picture displays
 .image-reel {
   display: flex;
   justify-content: center;
