@@ -1,8 +1,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 60px;
+  top: 60px;
   cursor: pointer;
   transition: all 0.7s ease-out; }
   .menu-btn .btn-line {
@@ -170,11 +170,14 @@ body {
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.7); }
+  body else {
+    background-color: #444;
+    min-height: 100vh; }
 
 h1,
 h2,
@@ -242,12 +245,12 @@ main {
       color: #13ff32d3; }
     main .info-box h6 {
       margin: 0.5rem 0;
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: #fff; }
     main .info-box p {
       margin: 1rem 0 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.4;
       color: #fff; }
   main .photo-boxes {
@@ -265,7 +268,7 @@ main {
       cursor: pointer;
       width: 100%;
       height: 100%;
-      max-width: 700px;
+      max-width: 1000px;
       max-height: 700px;
       text-align: center; }
       main .photo-boxes .photo-box img {
@@ -291,6 +294,7 @@ main {
     margin-top: 2rem;
     justify-items: center; }
     main .staff-container .staff-box {
+      cursor: not-allowed;
       background: #fff;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -298,11 +302,10 @@ main {
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
+      min-width: 300px;
       text-align: center;
       padding: 1rem; }
-      main .staff-container .staff-box:hover {
-        transform: scale(1.05); }
       main .staff-container .staff-box .staff-photo {
         width: 100%;
         height: auto;
@@ -579,4 +582,4 @@ form {
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
-  height: 60px; }
+  height: 70px; }

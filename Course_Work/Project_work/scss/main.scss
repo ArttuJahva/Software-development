@@ -101,15 +101,15 @@ main {
 
     h6 {
       margin: 0.5rem 0;
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: set-text-color($primary-color);
     }
 
-    // Text object for basic text
+    // Text object for paragraph
     p {
       margin: 1rem 0 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.4;
       color: set-text-color($primary-color);
     }
@@ -132,7 +132,7 @@ main {
       cursor: pointer;
       width: 100%;
       height: 100%;
-      max-width: 700px;
+      max-width: 1000px;
       max-height: 700px;
       text-align: center;
 
@@ -171,6 +171,7 @@ main {
     justify-items: center;
 
     .staff-box {
+      cursor: not-allowed;
       background: #fff;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -178,13 +179,10 @@ main {
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
+      min-width: 300px;
       text-align: center;
       padding: 1rem;
-
-      &:hover {
-        transform: scale(1.05);
-      }
 
       .staff-photo {
         width: 100%;
@@ -574,5 +572,5 @@ form {
   padding: 1rem;
   background: darken($primary-color, 10%);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: 70px;
 }
