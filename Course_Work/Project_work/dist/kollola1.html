@@ -38,8 +38,15 @@
     </header>
 
     <main>
-      <h1>Köllölä 1</h1>
-      <p>Rauhaisa mökki omalla rannalla metsän siimeksessä</p>
+      <h1 class="lg-heading">
+        Köllölä
+        <span class="text-secondary">1</span>
+      </h1>
+
+      <h2 class="sm-heading">
+        Rauhaisa mökki omalla rannalla metsän siimeksessä
+      </h2>
+
       <div class="image-display">
         <img
           src="img/kollola1_1.jpg"
@@ -67,9 +74,19 @@
           onclick="selectImage('img/Kollola1_3.jpg')"
         />
       </div>
-      <p>
-        Info text... Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-      </p>
+
+      <div class="infobox-kollola" style="padding: 30px">
+        <div>
+          Joensuusta 80 km pohjoiseen, Pielinen-järvi 20 m (871,2 km²), matala
+          hiekkapohja, oma ranta ja vene. Kelohirsimökki 1996, tupakeittiö
+          vuodesohva, verhoton makuualkovi vuodesohva, makuuparvi parivuode ja 2
+          vuodetta, terassi, parveke. Erillinen puulämmitteinen kelorantasauna,
+          jonka löylyhuoneessa suihku, puku/takkahuone, josta käynti saunaan
+          avokuistin kautta. Suihkun vesi lämpiää säiliössä, kun saunaa
+          lämmitetään.
+        </div>
+      </div>
+
       <div class="contact-map-container">
         <div class="contact-form">
           <h3>Ota yhteyttä:</h3>
@@ -79,7 +96,12 @@
             <label for="email">Sähköposti:</label>
             <input type="email" id="email" name="email" required />
             <label for="message">Viesti:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              required
+              style="height: 130px"
+            ></textarea>
             <button type="submit">Lähetä</button>
           </form>
         </div>
@@ -97,10 +119,6 @@
         </div>
       </div>
     </main>
-
-    <footer>
-      <p>&copy; 2024 Company Name</p>
-    </footer>
 
     <div class="pop-up" id="form-popup" style="display: none">
       <div class="pop-up-content">

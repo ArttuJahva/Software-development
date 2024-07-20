@@ -180,16 +180,22 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 500;
+  text-align: center; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading {
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     padding: 0.2rem 1rem;
+    padding-top: 2rem;
     background: rgba(73, 73, 73, 0.5); }
 
 a {
@@ -268,7 +274,7 @@ main {
         object-fit: cover; }
       main .photo-boxes .photo-box p {
         text-align: center;
-        font-size: 1rem;
+        font-size: 2rem;
         color: #444;
         padding: 0.5rem;
         margin: 0; }
@@ -278,6 +284,39 @@ main {
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 0.5rem; }
+  main .staff-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    margin-top: 2rem;
+    justify-items: center; }
+    main .staff-container .staff-box {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      padding: 1rem; }
+      main .staff-container .staff-box:hover {
+        transform: scale(1.05); }
+      main .staff-container .staff-box .staff-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover; }
+      main .staff-container .staff-box .staff-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0.5rem 0;
+        color: #444; }
+      main .staff-container .staff-box .staff-description {
+        font-size: 2rem;
+        color: #444;
+        margin: 0.5rem 0; }
   main .photo-index-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -320,6 +359,21 @@ main {
         color: #000; }
         main .boxes div:hover span {
           color: #000; }
+
+.infobox-kollola {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .infobox-kollola div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 1.5rem;
+    transition: all 0.7s ease-out; }
 
 .pop-up {
   position: fixed;
@@ -371,21 +425,21 @@ main {
   align-items: center;
   margin-top: 2rem; }
   .contact-map-container div {
-    font-size: 1rem;
+    font-size: 2.6rem;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.7s ease-out; }
-    .contact-map-container div span {
-      color: #000; }
 
 form {
   display: flex;
   flex-direction: column;
   margin: 1rem 0;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   form label {
     margin-top: 0.5rem;
     font-weight: bold;
+    font-size: 1.2rem;
     width: 100%;
     max-width: 500px;
     text-align: left; }
@@ -393,17 +447,17 @@ form {
   form textarea {
     margin-top: 0.5rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-    max-width: 500px; }
+    width: 400px;
+    max-width: 800px; }
   form button {
     margin-top: 1rem;
     padding: 0.5rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #13ff32d3;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: #babdba;
     border: none;
     border-radius: 5px;
     cursor: pointer; }
@@ -411,8 +465,9 @@ form {
       background-color: rgba(0, 223, 29, 0.827451); }
 
 .image-display {
+  padding-top: 3rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   text-align: center;
   padding-bottom: 1rem; }
@@ -428,7 +483,7 @@ form {
   gap: 1rem;
   padding: 1rem 0; }
   .image-reel .thumbnail {
-    width: 100px;
+    width: 200px;
     height: auto;
     cursor: pointer;
     border: 2px solid transparent;
@@ -442,7 +497,15 @@ form {
     flex-direction: column;
     align-items: center; }
     .image-reel .thumbnail {
-      width: 80px; } }
+      width: 80px; }
+  .photo-boxes,
+  .staff-container {
+    grid-template-columns: 1fr; }
+    .photo-boxes .photo-box,
+    .photo-boxes .staff-box,
+    .staff-container .photo-box,
+    .staff-container .staff-box {
+      max-width: 100%; } }
 
 .index-photo-container {
   display: grid;
@@ -471,11 +534,15 @@ form {
 
 @media screen and (min-width: 1171px) {
   .index-photo-container {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .image-display {
+    max-width: 900px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .index-photo-container {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .image-display {
+    max-width: 700px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -485,7 +552,9 @@ form {
       line-height: 1;
       margin-bottom: 1rem; }
   .index-photo-container {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .image-display {
+    max-width: 600px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -500,7 +569,10 @@ form {
   .photo-boxes {
     grid-template-columns: 1fr; }
     .photo-boxes .photo-box {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .image-display {
+    max-width: 100%;
+    padding: 2rem 1rem; } }
 
 #main-footer {
   text-align: center;

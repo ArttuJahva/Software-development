@@ -36,9 +36,17 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Köllölä 3</h1>
-      <p>Rauhaisa mökki omalla rannalla metsän siimeksessä</p>
+      <h1 class="lg-heading">
+        Köllölä
+        <span class="text-secondary">3</span>
+      </h1>
+
+      <h2 class="sm-heading">
+        Rauhaisa mökki omalla rannalla metsän siimeksessä
+      </h2>
+
       <div class="image-display">
         <img
           src="img/kollola3_1.jpg"
@@ -66,30 +74,49 @@
           onclick="selectImage('img/Kollola3_3.jpg')"
         />
       </div>
-      <p>
-        Info text... Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-      </p>
-      <h3>Ota yhteyttä:</h3>
-      <form id="contact-form">
-        <label for="name">Nimi:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Sähköposti:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Viesti:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Lähetä</button>
-      </form>
 
-      <div class="kollola3_location_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1797.7055551776575!2d29.4620803793457!3d63.21952860000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469ceaf3f15de8f5%3A0x4c53ad9d717c1faf!2sKoveronsaarentie%20359a%2C%2083940%20Juuka!5e0!3m2!1sfi!2sfi!4v1721416888339!5m2!1sfi!2sfi"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <div class="infobox-kollola" style="padding: 30px">
+        <div>
+          Joensuusta 80 km pohjoiseen, Pielinen-järvi 25 m (871,2 km²), matala
+          hiekkapohja, oma ranta ja vene. Kelohirsimökki 2006, tupakeittiö,
+          makuuhuone parivuode, makuuparvi parivuode (140 cm), vuode (120 cm) ja
+          levitettävä vuodesohva, puulämmitteinen sauna, pesuhuone, terassi ja
+          parveke. Vuokrattavissa kylpypalju. Paljun varausajan tulee olla sama
+          kuin mökin vuokra-aika. Omistaja täyttää paljun ja tekee
+          alkulämmityksen sekä antaa jatko-opastuksen asiakkaalle.
+        </div>
+      </div>
+
+      <div class="contact-map-container">
+        <div class="contact-form">
+          <h3>Ota yhteyttä:</h3>
+          <form id="contact-form">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Viesti:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              style="height: 130px"
+            ></textarea>
+            <button type="submit">Lähetä</button>
+          </form>
+        </div>
+
+        <div class="kollola3_location_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1797.7055551776575!2d29.4620803793457!3d63.21952860000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469ceaf3f15de8f5%3A0x4c53ad9d717c1faf!2sKoveronsaarentie%20359a%2C%2083940%20Juuka!5e0!3m2!1sfi!2sfi!4v1721416888339!5m2!1sfi!2sfi"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </main>
 
