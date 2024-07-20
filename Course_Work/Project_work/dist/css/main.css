@@ -218,24 +218,34 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-  main .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem; }
-    main .boxes div {
-      font-size: 2rem;
-      border: 3px #fff solid;
-      padding: 1.5rem 2.5rem;
-      margin-bottom: 3rem;
-      transition: all 0.7s ease-out; }
-      main .boxes div:hover {
-        padding: 0.5rem 1.5rem;
-        background: #13ff32d3;
-        color: #000; }
-        main .boxes div:hover span {
-          color: #000; }
+  main .info-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem; }
+    main .info-boxes .info-box {
+      background: #111111;
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      border-bottom: 5px solid #13ff32d3;
+      transition: transform 0.3s ease-in-out; }
+      main .info-boxes .info-box h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #13ff32d3; }
+      main .info-boxes .info-box h6 {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        font-weight: normal;
+        color: rgba(121, 255, 139, 0.827451); }
+      main .info-boxes .info-box p {
+        margin: 1rem 0 0;
+        font-size: 1rem;
+        line-height: 1.4; }
+      main .info-boxes .info-box:hover {
+        transform: scale(1.05); }
   main .photo-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -265,8 +275,8 @@ main {
       main .photo-boxes .photo-box:hover {
         transform: scale(1.05); }
     main .photo-boxes .photo-title {
-      font-style: bold;
-      font-size: 1.2rem;
+      font-size: 2rem;
+      font-weight: bold;
       margin-bottom: 0.5rem; }
   main .photo-index-container {
     display: grid;
@@ -288,6 +298,35 @@ main {
           height: auto;
           border: 2px solid #fff;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  main .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; }
+    main .boxes div {
+      font-size: 2rem;
+      border: 3px #fff solid;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: all 0.7s ease-out; }
+      main .boxes div:hover {
+        padding: 0.5rem 1.5rem;
+        background: #13ff32d3;
+        color: #000; }
+        main .boxes div:hover span {
+          color: #000; }
+  main .contact-map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem; }
+    @media screen and (max-width: 500px) {
+      main .contact-map-container {
+        grid-template-columns: 1fr; } }
+  main .contact-form {
+    display: flex;
+    flex-direction: column; }
 
 .pop-up {
   position: fixed;
@@ -308,16 +347,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; }
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto; }
 
 .pop-up-content img {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  margin-right: 2rem; }
+  margin-bottom: 1rem; }
 
 .pop-up-content .info-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
   text-align: center; }
 
@@ -327,7 +369,7 @@ main {
   right: 10px;
   font-size: 2rem;
   cursor: pointer;
-  color: #fff; }
+  color: #333; }
 
 form {
   display: flex;
@@ -395,27 +437,6 @@ form {
     .image-reel .thumbnail {
       width: 80px; } }
 
-.photo-index-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  margin-top: 2rem;
-  justify-items: center; }
-  .photo-index-container .photo-index-box {
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; }
-    .photo-index-container .photo-index-box:hover {
-      transform: scale(1.05); }
-    .photo-index-container .photo-index-box .photo-index-images {
-      width: 100%;
-      height: auto; }
-      .photo-index-container .photo-index-box .photo-index-images .photo-index-image {
-        width: 100%;
-        height: auto;
-        border: 2px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-
 @media screen and (min-width: 1171px) {
   .photo-index-container {
     grid-template-columns: repeat(4, 1fr); } }
@@ -431,9 +452,6 @@ form {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
   .photo-index-container {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -451,3 +469,10 @@ form {
     grid-template-columns: 1fr; }
     .photo-boxes .photo-box {
       max-width: 100%; } }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }

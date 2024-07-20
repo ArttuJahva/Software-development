@@ -70,17 +70,17 @@ function showInfo(extraId) {
     case 1:
       imgSrc = "img/savusauna.JPG";
       infoText =
-        "This is a traditional smoke sauna. Enjoy the authentic experience with a unique atmosphere.";
+        "This is a traditional smoke sauna. Enjoy the authentic experience with a unique atmosphere. 100€/heating and usage service.";
       break;
     case 2:
       imgSrc = "img/palju.JPG";
       infoText =
-        "Relax in our outdoor hot tub, perfect for any season and a great addition to your stay.";
+        "Relax in our outdoor hot tub, perfect for any season and a great addition to your stay. 75€/heating and usage service.";
       break;
     case 3:
       imgSrc = "img/peramoottori.JPG";
       infoText =
-        "Our boat motor is available for rent to enhance your boating experience on the lake.";
+        "Our boat motor is available for rent to enhance your boating experience on the lake. 25€+petrol cost per day.";
       break;
     default:
       infoText = "No information available.";
@@ -88,6 +88,7 @@ function showInfo(extraId) {
 
   popUp.innerHTML = `
     <div class="pop-up-content">
+      <span class="close-btn">&times;</span>
       <img src="${imgSrc}" alt="Extra ${extraId}">
       <div class="info-text">${infoText}</div>
     </div>
@@ -95,9 +96,9 @@ function showInfo(extraId) {
 
   document.body.appendChild(popUp);
 
-  // Close the pop-up when clicking outside the pop-up-content
+  // Close the pop-up when clicking outside the pop-up-content or on close button
   popUp.addEventListener("click", (e) => {
-    if (e.target === popUp) {
+    if (e.target === popUp || e.target.classList.contains("close-btn")) {
       document.body.removeChild(popUp);
     }
   });
