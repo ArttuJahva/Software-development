@@ -1,5 +1,5 @@
 // select different DOM items
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector("#menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
@@ -102,25 +102,3 @@ function showInfo(extraId) {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const slideshows = document.querySelectorAll(".slideshow-box");
-
-  slideshows.forEach((slideshow, index) => {
-    let currentSlide = 0;
-    const images = slideshow.querySelectorAll(".slideshow-image");
-    const totalSlides = images.length;
-
-    images.forEach((img, index) => {
-      if (index !== 0) img.classList.remove("active"); // Hide all images except the first one
-    });
-
-    setTimeout(() => {
-      setInterval(() => {
-        images[currentSlide].classList.remove("active"); // Hide current image
-        currentSlide = (currentSlide + 1) % totalSlides; // Move to the next image
-        images[currentSlide].classList.add("active"); // Show the next image
-      }, 5000); // Change image every 5 seconds
-    }, 1000 * index); // Add 1 second difference between each slideshow
-  });
-});
