@@ -51,7 +51,7 @@ $background-opacity: 0.7;
 
       &:after {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -64,6 +64,6 @@ $background-opacity: 0.7;
   else {
     // Ensure the background color continues infinitely
     background-color: $primary-color;
-    min-height: 100vh; // Ensure it covers the full viewport height
+    min-height: 100vh;
   }
 }

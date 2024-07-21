@@ -8,7 +8,7 @@
 
 body {
   @include background();
-  background: #444;
+  background: #444444;
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
@@ -121,6 +121,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-items: center;
 
     .photo-box {
@@ -168,6 +169,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-items: center;
 
     .staff-box {
@@ -452,42 +454,6 @@ form {
     .photo-box,
     .staff-box {
       max-width: 100%;
-    }
-  }
-}
-
-.index-photo-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  margin-top: 2rem;
-  justify-items: center;
-
-  .index-photo-box {
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    .index-photo-images {
-      width: 100%;
-      height: auto;
-
-      .index-photo-image {
-        width: 100%;
-        height: auto;
-        border: 2px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-    }
-
-    .info-box {
-      flex: 1;
     }
   }
 }

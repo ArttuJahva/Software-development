@@ -156,7 +156,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #444444;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -168,7 +168,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -258,6 +258,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-items: center; }
     main .photo-boxes .photo-box {
       background: #fff;
@@ -292,6 +293,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     justify-items: center; }
     main .staff-container .staff-box {
       cursor: not-allowed;
@@ -509,31 +511,6 @@ form {
     .staff-container .photo-box,
     .staff-container .staff-box {
       max-width: 100%; } }
-
-.index-photo-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  margin-top: 2rem;
-  justify-items: center; }
-  .index-photo-container .index-photo-box {
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column; }
-    .index-photo-container .index-photo-box:hover {
-      transform: scale(1.05); }
-    .index-photo-container .index-photo-box .index-photo-images {
-      width: 100%;
-      height: auto; }
-      .index-photo-container .index-photo-box .index-photo-images .index-photo-image {
-        width: 100%;
-        height: auto;
-        border: 2px solid #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
-    .index-photo-container .index-photo-box .info-box {
-      flex: 1; }
 
 @media screen and (min-width: 1171px) {
   .index-photo-container {
