@@ -12,6 +12,7 @@
   "author": "A K",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0"
   }
 }
