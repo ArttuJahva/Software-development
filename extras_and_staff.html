@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extras & Staff</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn" id="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu" id="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="kollola1.html" class="nav-link">Köllölä 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="kollola2.html" class="nav-link">Köllölä 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="kollola3.html" class="nav-link">Köllölä 3</a>
+          </li>
+          <li class="nav-item current">
+            <a href="extras_and_staff.html" class="nav-link">Extras & Staff</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
+      <h1 class="lg-heading">
+        Extras
+        <span class="text-secondary">& Staff</span>
+      </h1>
+
+      <h2 class="md-heading" style="padding: 30px">
+        Details about additional services:
+      </h2>
+
+      <div class="photo-boxes">
+        <div class="photo-box" onclick="showInfo(1)">
+          <p class="photo-title">Smoke sauna</p>
+          <img src="img/savusauna.JPG" alt="Extra 1" />
+          <p style="font-size: 1.4rem">Click for info</p>
+        </div>
+        <div class="photo-box" onclick="showInfo(2)">
+          <p class="photo-title">Outdoor hot tub</p>
+          <img src="img/palju.JPG" alt="Extra 2" />
+          <p style="font-size: 1.4rem">Click for info</p>
+        </div>
+        <div class="photo-box" onclick="showInfo(3)">
+          <p class="photo-title">Boat motor</p>
+          <img src="img/peramoottori.JPG" alt="Extra 3" />
+          <p style="font-size: 1.4rem">Click for info</p>
+        </div>
+      </div>
+
+      <h2 class="md-heading" style="padding: 30px">Staff introduction:</h2>
+
+      <div class="staff-container">
+        <div class="staff-box">
+          <h3 class="staff-name">Matti Meikäläinen</h3>
+          <img src="img/staff1.jpg" alt="Staff 1" class="staff-photo" />
+          <p class="staff-description">
+            40 years of experience related to summer cottages and all handyman
+            related tasks. Questions? Contact me!
+          </p>
+        </div>
+
+        <div class="staff-box">
+          <h3 class="staff-name">Maija Meikäläinen</h3>
+          <img src="img/staff2.jpg" alt="Staff 2" class="staff-photo" />
+          <p class="staff-description">
+            30 years of experience handling all stay and reservation related
+            matters to make your stay and arrival as fluent as possible.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="md-heading" style="padding: 30px">Contact details:</h2>
+
+      <div class="boxes" style="padding: 50px">
+        <div>
+          <span class="text-secondary">Email: </span>
+          contact@email.com
+        </div>
+        <div><span class="text-secondary">Phone: </span> +358 505 505 050</div>
+        <div>
+          <span class="text-secondary">Address: </span> Köllölän kylä, Finland,
+          Juuka 83940
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer" style="font-size: 25px">
+      Köllölän rantamökit &copy; 2024
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

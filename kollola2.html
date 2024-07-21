@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Köllölä 2</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn" id="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu" id="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="kollola1.html" class="nav-link">Köllölä 1</a>
+          </li>
+          <li class="nav-item current">
+            <a href="kollola2.html" class="nav-link">Köllölä 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="kollola3.html" class="nav-link">Köllölä 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="extras_and_staff.html" class="nav-link">Extras & Staff</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="lg-heading">
+        Köllölä
+        <span class="text-secondary">2</span>
+      </h1>
+
+      <h2 class="sm-heading">
+        Rauhaisa mökki omalla rannalla metsän siimeksessä
+      </h2>
+
+      <div class="image-display">
+        <img
+          src="img/kollola2_1.jpg"
+          alt="Selected image"
+          id="selected-image"
+        />
+      </div>
+      <div class="image-reel">
+        <img
+          src="img/kollola2_1.jpg"
+          alt="Image 1"
+          class="thumbnail"
+          onclick="selectImage('img/kollola2_1.jpg')"
+        />
+        <img
+          src="img/Kollola2_2.jpg"
+          alt="Image 2"
+          class="thumbnail"
+          onclick="selectImage('img/Kollola2_2.jpg')"
+        />
+        <img
+          src="img/Kollola2_3.jpg"
+          alt="Image 3"
+          class="thumbnail"
+          onclick="selectImage('img/Kollola2_3.jpg')"
+        />
+      </div>
+
+      <div class="infobox-kollola" style="padding: 30px">
+        <div>
+          Joensuusta 80 km pohjoiseen, Pielinen-järvi 25 m (871,2 km²), matala
+          hiekkapohja, oma ranta ja vene. Kelohirsimökki 1997, tupakeittiö,
+          verhollinen makuualkovi vuodesohva, makuuparvi parivuode ja
+          vuodesohva, terassi, parveke. Erillinen puulämmitteinen
+          kelorantasauna, jonka löylyhuoneessa suihku sekä puku/takkahuone.
+          Suihkun vesi lämpiää säiliössä, kun saunaa lämmitetään
+        </div>
+      </div>
+
+      <div class="contact-map-container">
+        <div class="contact-form">
+          <h3>Ota yhteyttä:</h3>
+          <form id="contact-form">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Viesti:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              style="height: 130px"
+            ></textarea>
+            <button type="submit">Lähetä</button>
+          </form>
+        </div>
+
+        <div class="kollola2_location_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1797.8136374095639!2d29.46468608842451!3d63.217789989015785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNjPCsDEzJzA0LjAiTiAyOcKwMjcnNTkuMiJF!5e0!3m2!1sfi!2sfi!4v1721417058249!5m2!1sfi!2sfi"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <div class="pop-up" id="form-popup" style="display: none">
+      <div class="pop-up-content">
+        <span class="close-btn">&times;</span>
+        <div class="info-text">
+          <h2>Kiitos viestistä!</h2>
+          <p>Olemme yhteydessä teihin mahdollisimman pian!</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="main-footer" style="font-size: 25px">
+      Köllölän rantamökit &copy; 2024
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

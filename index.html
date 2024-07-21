@@ -10,35 +10,35 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/main.css" />
-    <title>Hello world course edition</title>
+    <title>Köllölän Rantamökit</title>
   </head>
-
   <body id="bg-img">
     <header>
-      <div class="menu-btn">
+      <div class="menu-btn" id="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
       </div>
-
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <div class="menu-branding">
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
           <li class="nav-item current">
-            <a href="index.html" class="nav-link"> Home </a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link"> About Me </a>
+            <a href="kollola1.html" class="nav-link">Köllölä 1</a>
           </li>
           <li class="nav-item">
-            <a href="work.html" class="nav-link"> My Experience </a>
+            <a href="kollola2.html" class="nav-link">Köllölä 2</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link"> Contact Details </a>
+            <a href="kollola3.html" class="nav-link">Köllölä 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="extras_and_staff.html" class="nav-link">Extras & Staff</a>
           </li>
         </ul>
       </nav>
@@ -46,10 +46,10 @@
 
     <main id="home">
       <h1 class="lg-heading">
-        Arttu
-        <span class="text-secondary">Kayhko</span>
+        Köllölä
+        <span class="text-secondary">cottages</span>
       </h1>
-      <h2 class="sm-heading">Data, Analytics & AI professional</h2>
+      <h2 class="sm-heading">Welcome to Köllölä!</h2>
       <div class="icons">
         <a href="#!">
           <i class="fab fa-twitter fa-2x"></i>
@@ -64,8 +64,91 @@
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
+
+      <div class="photo-index-container">
+        <div
+          class="photo-index-box"
+          id="photo-index-kollola1"
+          onclick="location.href='kollola1.html'"
+        >
+          <div class="photo-index-images">
+            <img
+              src="img/kollola1_1.jpg"
+              alt="Köllölä 1 Image 1"
+              class="photo-index-image active"
+            />
+          </div>
+          <div class="info-box">
+            <h3>Köllölä 1</h3>
+            <h6>Peaceful "old school" cottage with sauna and beach</h6>
+            <p>
+              Mahtava kelohirsimökki luonnonkauniissa ympäristössä ja avarassa
+              järvimaisemassa, ei näköyhteyttä naapuriin. Lapsille soveltuva
+              ranta avautuu länteen. Polkuvene ja kanootti. Hyvät
+              kalastusmahdollisuudet, uistelu-, viehe- ja verkkokalastusluvat
+              sisältyvät vuokrahintoihin.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="photo-index-box"
+          id="photo-index-kollola2"
+          onclick="location.href='kollola2.html'"
+        >
+          <div class="photo-index-images">
+            <img
+              src="img/kollola2_1.jpg"
+              alt="Köllölä 2 Image 1"
+              class="photo-index-image active"
+            />
+          </div>
+          <div class="info-box">
+            <h3>Köllölä 2</h3>
+            <h6>
+              Spacious cottage with separate large sauna building and beach
+            </h6>
+            <p>
+              Mahtava kelohirsimökki luonnonkauniissa ympäristössä ja avarassa
+              järvimaisemassa. Lapsille soveltuva ranta avautuu länteen.
+              Polkuvene ja kanootti. Hyvät kalastusmahdollisuudet, uistelu-,
+              viehe- ja verkkokalastusluvat sisältyvät vuokrahintoihin.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="photo-index-box"
+          id="photo-index-kollola3"
+          onclick="location.href='kollola3.html'"
+        >
+          <div class="photo-index-images">
+            <img
+              src="img/kollola3_1.jpg"
+              alt="Köllölä 3 Image 1"
+              class="photo-index-image active"
+            />
+          </div>
+          <div class="info-box">
+            <h3>Köllölä 3</h3>
+            <h6>
+              Modern cottage with integrated sauna, cooking area and beach
+            </h6>
+            <p>
+              Mahtava kelohirsimökki luonnonkauniissa ympäristössä ja avarassa
+              järvimaisemassa Koveronsaaressa, autotie perille. Lapsille
+              soveltuva ranta avautuu länteen. Polkuvene ja kanootti. Hyvät
+              kalastusmahdollisuudet, uistelu-, viehe- ja verkkokalastusluvat
+              sisältyvät vuokrahintoihin.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <footer id="main-footer" style="font-size: 25px">
+      Köllölän rantamökit &copy; 2024
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
