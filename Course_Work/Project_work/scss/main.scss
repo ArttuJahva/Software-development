@@ -173,13 +173,11 @@ main {
     justify-items: center;
 
     .staff-box {
-      cursor: not-allowed;
       background: #fff;
       border-radius: 5px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: transform 0.3s ease-in-out;
-      cursor: pointer;
       width: 100%;
       max-width: 700px;
       min-width: 300px;
@@ -187,9 +185,11 @@ main {
       padding: 1rem;
 
       .staff-photo {
-        width: 100%;
+        cursor: not-allowed;
+        width: 95%;
+        height: 75%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 20%;
         object-fit: cover;
       }
 
