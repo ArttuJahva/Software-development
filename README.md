@@ -7,7 +7,7 @@ This repository contians uni course work
 3. File "Learning_Diary" for learning diary (Word file)
 
 Link to the published project website:
- ADD
+https://arttujahva.github.io/Software-development/index.html
 
 Link to the project video (requires LUT credentials to view):
 https://lut-my.sharepoint.com/:v:/g/personal/arttu_kayhko_student_lut_fi/EcN3l6bqkuFButp2le3t2AIBjwQbBY7HDxrmckcY3kAIUA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BuvOuI
