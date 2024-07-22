@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://github.com/ArttuJahva/Software-development/blob/main/Course_Work/Project_work/dist/img/menu_pic.jpg");
+      background: url("/dist/img/menu_pic.jpg");
       background-size: cover;
       background-position: center;
       border-radius: 50%;
